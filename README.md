@@ -6,7 +6,7 @@ Projects
     JS
 
 In-Class Assignments
-    ICA1
+    [ICA1](https://github.com/jmgoubeaud/jmgoubeaud.github.io/blob/1f97f5925cc8c7a25a7da83b245e05ac76dc9560/index.html)
     ICA2
     ICA3
     ICA4
