@@ -23,7 +23,7 @@ In-Class Assignments
     ICA15
 
 Weekly Assignments
-    WA1
+    [WA1](https://github.com/jmgoubeaud/jmgoubeaud.github.io/blob/330d6edcda80bc2bc6909f4c78e757e236666ae9/wa/wa1.html)
     WA2
     WA3
     WA4
