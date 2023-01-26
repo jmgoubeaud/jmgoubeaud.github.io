@@ -6,8 +6,8 @@ Projects
     JS
 
 In-Class Assignments
-    [ICA1](https://docs.google.com/document/d/1gZaqFVMXRa4lQgLCDQAbfNLY6nQYM_ZxwnIef9tf__w/edit)
-    [ICA2](https://docs.google.com/document/d/1sxhNPMUBcOtBhlrdRUdi7jPJwXZLMlQvGTuFkYVrZ5g/edit)
+    [ICA1](https://jmgoubeaud.github.io/ica/ICA1.pdf)
+    [ICA2](https://jmgoubeaud.github.io/ica/ICA2.pdf)
     ICA3
     ICA4
     ICA5
@@ -23,7 +23,7 @@ In-Class Assignments
     ICA15
 
 Weekly Assignments
-    [WA1](https://github.com/jmgoubeaud/jmgoubeaud.github.io/blob/330d6edcda80bc2bc6909f4c78e757e236666ae9/wa/wa1.html)
+    [WA1](https://jmgoubeaud.github.io/wa/wa1.html)
     WA2
     WA3
     WA4
