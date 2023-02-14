@@ -17,7 +17,7 @@
     height: 297mm;
     margin: 20px auto;
     position: relative;
-    background: url("/img/top-image.png") no-repeat left top, url("/img/bottom-image.png") no-repeat left bottom;
+    background: url("top-image.png") no-repeat left top, url("bottom-image.png") no-repeat left bottom;
     border-top: 1mm solid red;
     border-bottom: 1mm solid red;
   }
@@ -40,7 +40,7 @@
     padding: 44px 0;
     color: white;
     text-shadow: 1px 1px 1px black;
-    background-image: url("/img/logo.png");
+    background-image: url("logo.png");
     border-radius: 64px;
     box-shadow: 3px 3px 3px black;
   }
