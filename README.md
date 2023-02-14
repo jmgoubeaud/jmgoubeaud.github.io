@@ -11,7 +11,7 @@ In-Class Assignments
     [ICA3a](https://jmgoubeaud.github.io/ica/ica3a.html)
     [ICA3b](https://jmgoubeaud.github.io/ica/ica3b.html)
     [ICA4](https://jmgoubeaud.github.io/ica/ica4.html)
-    ICA5
+    [ICA5](https://jmgoubeaud.github.io/ica/ica5/ica5.html)
     ICA6
     ICA7
     ICA8
