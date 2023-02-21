@@ -12,9 +12,9 @@ In-Class Assignments
     [ICA3b](https://jmgoubeaud.github.io/ica/ica3b.html)
     [ICA4](https://jmgoubeaud.github.io/ica/ica4.html)
     [ICA5](https://jmgoubeaud.github.io/ica/ica5/ica5.html)
-    [ICA6-Part1](https://jmgoubeaud.github.io/ica/ica6/ica6-part1.html)
-    [ICA6-Part2](https://jmgoubeaud.github.io/ica/ica6/ica6-part2.html)
-    [ICA6-Part3](https://jmgoubeaud.github.io/ica/ica6/ica6-part3.html)
+    [ICA6 pt1](https://jmgoubeaud.github.io/ica/ica6/ica6-part1.html)
+    [pt2](https://jmgoubeaud.github.io/ica/ica6/ica6-part2.html)
+    [pt3](https://jmgoubeaud.github.io/ica/ica6/ica6-part3.html)
     ICA7
     ICA8
     ICA9
