@@ -1,0 +1,104 @@
+body {
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+  }
+
+  img {
+      max-width: 100%;
+      display: block;
+  }
+  
+  .logo {
+    font-size: 200%;
+    padding: 50px 20px;
+    margin: 0 auto;
+    max-width: 980px;
+  }
+  
+  /* only other thing being affected outside of the normal layout/style 
+  .grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 980px;
+  } */
+  
+  /* added sticky and top location for the nav bar */
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    padding: .5em;
+  }
+  
+  /* added display type and justified space between */
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5em 1em;
+  }
+  
+  /* only other thing being affected outside of the normal layout/style 
+  .photos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  } */
+
+  /* added where the image shound stay and gave it some space from the words */
+  .feature {
+      width: 200px;
+      float: left;
+      margin: 1em;
+  }
+
+/* the condition for screens larger than 500px*/
+/* affects where how the article and aside are positioned in relation to each other (right next to each other) */
+@media screen and (min-width: 500px) {
+    .grid {
+        display: flex;
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 980px;
+    }
+    
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1px;
+        row-gap: 1px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/* the condition for screens smaller than 500px*/
+/* affects where how the article and aside are positioned in relation to each other (article above aside) */
+@media screen and (max-width: 500px) {
+    .grid {
+        display: grid;
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 980px;
+    }
+    
+    .photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1px;
+        row-gap: 1px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
