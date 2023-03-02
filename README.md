@@ -32,7 +32,7 @@ Weekly Assignments
     [WA4](https://jmgoubeaud.github.io/wa/wa4.html)
     [WA5](https://jmgoubeaud.github.io/wa/wa5.html)
     [WA6](https://jmgoubeaud.github.io/wa/wa6/index.html)
-    WA7
+    [WA7](https://jmgoubeaud.github.io/wa/week7.html)
     WA8
     WA9
     WA10
