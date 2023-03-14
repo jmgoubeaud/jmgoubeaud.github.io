@@ -2,7 +2,7 @@
 
 Projects
     [HTML](https://jmgoubeaud.github.io/html-midterm/page5.html)
-    CSS
+    [CSS](https://jmgoubeaud.github.io/index.html)
     JS
 
 In-Class Assignments
