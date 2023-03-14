@@ -1,0 +1,21 @@
+#button {
+    border: 5px solid darkmagenta;
+    border-radius: 20px;
+    background-color: magenta;
+    padding: 25px 50px;
+    width: 250px;
+    text-align: center;
+}
+
+#new {
+    border: 10px solid lightcoral;
+    border-radius: 50px;
+    background-color: lightpink;
+    padding: 25px 50px;
+    width: 300px;
+    text-align: center;
+}
+
+p {
+    font-size: 50px;
+}
