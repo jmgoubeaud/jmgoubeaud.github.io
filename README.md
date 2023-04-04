@@ -19,7 +19,7 @@ In-Class Assignments
     ICA8
     [ICA9](https://jmgoubeaud.github.io/ica/ica9.html)
     [ICA10](https://jmgoubeaud.github.io/ica/ica10/ica10.html)
-    ICA11
+    [ICA11](https://jmgoubeaud.github.io/ica/ica11/ica11.html)
     ICA12
     ICA13
     ICA14
