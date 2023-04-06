@@ -45,6 +45,13 @@ html {
     font-size: 25px;
     color: blue;
   }
+
+  .answer-text {
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: plum;
+    background-color: plum;
+  }
   
   .controls {
     width: 100%;

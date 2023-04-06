@@ -2,7 +2,7 @@ const button = document.querySelector('#js-new-quote');
 button.addEventListener('click', getQuote);
 
 const answerButton = document.querySelector('#js-tweet');
-answerButton.addEventListener('click', showAnswer);
+answerButton.addEventListener('click', changeColor);
 
 const shareButton = document.querySelector('#js-share');
 shareButton.addEventListener('click', shareJoke);
@@ -30,11 +30,16 @@ async function getQuote() {
 function displayQuote(quote) {
     const quoteText = document.querySelector('#js-quote-text');
     quoteText.textContent = quote;
+    document.getElementById('js-answer-text').style.backgroundColor = "plum";
 }
 
 function showAnswer(quote) {
     const quoteText = document.querySelector("#js-answer-text");
     quoteText.textContent = quote;
+}
+
+function changeColor() {
+    document.getElementById("js-answer-text").style.backgroundColor = "azure";
 }
 
 function shareJoke() {
