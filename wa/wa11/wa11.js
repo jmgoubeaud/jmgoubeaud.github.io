@@ -23,7 +23,7 @@ async function getQuote() {
     }
     catch (err){
         console.log(err);
-        alert('Failed to fetch new joke');
+        alert('Failed to fetch new Joke');
     }
 }
 
