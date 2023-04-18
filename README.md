@@ -16,7 +16,6 @@ In-Class Assignments
     [pt2](https://jmgoubeaud.github.io/ica/ica6/ica6-part2.html)
     [pt3](https://jmgoubeaud.github.io/ica/ica6/ica6-part3.html)
     [ICA7](https://jmgoubeaud.github.io/ica/ica7.html)
-    ICA8
     [ICA9](https://jmgoubeaud.github.io/ica/ica9.html)
     [ICA10](https://jmgoubeaud.github.io/ica/ica10/ica10.html)
     [ICA11](https://jmgoubeaud.github.io/ica/ica11/ica11.html)
@@ -33,11 +32,10 @@ Weekly Assignments
     [WA5](https://jmgoubeaud.github.io/wa/wa5.html)
     [WA6](https://jmgoubeaud.github.io/wa/wa6/index.html)
     [WA7](https://jmgoubeaud.github.io/wa/week7.html)
-    WA8
     [WA9](https://jmgoubeaud.github.io/wa/wa9.html)
     [WA10](https://jmgoubeaud.github.io/wa/wa10/wa10.html)
     [WA11](https://jmgoubeaud.github.io/wa/wa11/wa11.html)
     [WA12](https://jmgoubeaud.github.io/wa/wa12/wa12.html)
-    [WA13](https://jmgoubeaud.github.io/wa/wa13/wa13.html)
+    WA13
     WA14
     WA15
