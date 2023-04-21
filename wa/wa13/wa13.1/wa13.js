@@ -1,6 +1,4 @@
 // set up canvas
-const customName = document.getElementById('volume');
-
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
