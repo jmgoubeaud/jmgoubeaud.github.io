@@ -1,72 +1,107 @@
-function check() {
-    console.log('test');
+// set up canvas
+const canvas = document.querySelector('canvas');
+const ctx = canvas.getContext('2d');
+
+const width = canvas.width = window.innerWidth;
+const height = canvas.height = window.innerHeight;
+
+// function to generate random number
+
+function random(min, max) {
+  const num = Math.floor(Math.random() * (max - min + 1)) + min;
+  return num
 }
 
-function submit() {
-    alert("Your volume is now: " + output.textContent);
+// function to generate random RGB color value
+
+function randomRGB() {
+  return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-function reset() {
-    outputInt = 0;
-    output.textContent = outputInt;
+class Ball {
+   constructor(x, y, velX, velY, color, size) {
+      this.x = x;
+      this.y = y;
+      this.velX = velX;
+      this.velY = velY;
+      this.color = color;
+      this.size = size;
+   }
+
+   draw() {
+      ctx.beginPath();
+      ctx.fillStyle = this.color;
+      ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+      ctx.fill();
+   }
+
+   update() {
+      if ((this.x + this.size) >= width) {
+         this.velX = -(Math.abs(this.velX));
+      }
+
+      if ((this.x - this.size) <= 0) {
+         this.velX = Math.abs(this.velX);
+      }
+
+      if ((this.y + this.size) >= height) {
+         this.velY = -(Math.abs(this.velY));
+      }
+
+      if ((this.y - this.size) <= 0) {
+         this.velY = Math.abs(this.velY);
+      }
+
+      this.x += this.velX;
+      this.y += this.velY;
+   }
+
+   collisionDetect() {
+    for (const ball of balls) {
+        if ((this !== ball)) {
+            const dx = this.x - ball.x;
+            const dy = this.y - ball.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < this.size + ball.size) {
+              ball.color = this.color = randomRGB();
+              randInt = random(1, 100);
+              console.log("Your volume is: " + randInt)
+            }
+         }
+      }
+   }
 }
 
-function minus() {
-    if (outputInt > 0) {
-    outputInt -=1;
-    output.textContent = outputInt; }
-    
+const balls = [];
+var randInt = 50;
+
+while (balls.length < 15) { // how many balls we want
+   const size = random(5,10); // smallest/largest size of balls
+   const ball = new Ball(
+      // ball position always drawn at least one ball width
+      // away from the edge of the canvas, to avoid drawing errors
+      random(0 + size,width - size), // random position
+      random(0 + size,height - size), // random position
+      random(-2,2), // random speed x
+      random(-2,2), // random speed y
+      randomRGB(), // random color generated
+      size
+   );
+
+  balls.push(ball);
 }
 
-function plus() {
-    if (outputInt < 100) {
-    outputInt +=1;
-    output.textContent = outputInt;
-    }
+function loop() {
+   ctx.fillStyle = 'rgba(0, 0, 0, 0.25)';
+   ctx.fillRect(0, 0,  width, height);
+
+   for (const ball of balls) {
+     ball.draw();
+     ball.update();
+     ball.collisionDetect();
+   }
+   requestAnimationFrame(loop);
 }
 
-function random() {
-    outputInt = randomNumber(0, 100);
-    output.textContent = outputInt;
-}
-
-function randomNumber(min, max) {
-    const num = Math.floor(Math.random() * (max - min + 1)) + min;
-    return num;
-  }
-
-
-
-const output = document.querySelector('.output');
-let outputInt = parseInt(output.textContent);
-console.log(outputInt);
-
-const minusButton = document.querySelector('.minus-button').addEventListener('click', minus);
-const plusButton = document.querySelector('.plus-button').addEventListener('click', plus);
-const resetButton = document.querySelector('.reset-button').addEventListener('click', reset);
-const randomButton = document.querySelector('.random-button').addEventListener('click', random);
-const submitButton = document.querySelector('.submit-button').addEventListener('click', submit);
-
-
-/* const button = document.querySelector('.button');
-const output = document.querySelector('.output');
-let phone_content = document.querySelector('.phone');
-
-button.addEventListener('click', updateOutput);
-
-function updateOutput() {
-    output.textContent = phone_content.value;
-    alert(phone_content.value);
-}
-*/
-
-
-var slider = document.getElementById("myRange");
-var sliderSubmit = document.querySelector(".slider-submit-button").addEventListener('click', update);
-var sliderOutput = document.querySelector(".slider-output");
-
-
-// Update the current slider value (each time you drag the slider handle)
-function update() {
-  sliderOutput.textContent = slider.value;
-}
+loop();
