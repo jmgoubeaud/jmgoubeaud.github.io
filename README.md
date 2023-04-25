@@ -22,7 +22,6 @@ In-Class Assignments
     [ICA12](https://jmgoubeaud.github.io/ica/ica12/ica12.html)
     [ICA13](https://jmgoubeaud.github.io/ica/ica13/ica13.html)
     [ICA14](https://api.mapbox.com/styles/v1/jugo5950/clgwgi21i003y01r82xus7s20.html?title=view&access_token=pk.eyJ1IjoianVnbzU5NTAiLCJhIjoiY2xnbWg0NHVrMDBrZTNycGx3OWhmdjQ0aSJ9.GColDlqnd-iDYrSn4QsMgA&zoomwheel=true&fresh=true#4.92/54.05/-3.44)
-    ICA15
 
 Weekly Assignments
     [WA1](https://jmgoubeaud.github.io/wa/wa1.html)
@@ -38,4 +37,3 @@ Weekly Assignments
     [WA12](https://jmgoubeaud.github.io/wa/wa12/wa12.html)
     [WA13](https://jmgoubeaud.github.io/wa/wa13/wa13.1/wa13.html)
     WA14
-    WA15
