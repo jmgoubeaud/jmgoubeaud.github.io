@@ -36,4 +36,4 @@ Weekly Assignments
     [WA11](https://jmgoubeaud.github.io/wa/wa11/wa11.html)
     [WA12](https://jmgoubeaud.github.io/wa/wa12/wa12.html)
     [WA13](https://jmgoubeaud.github.io/wa/wa13/wa13.1/wa13.html)
-    WA14
+    [WA14](http://jmgoubeaud.github.io/wa/wa14.html)
