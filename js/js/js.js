@@ -1,11 +1,48 @@
+const randomize = document.querySelector('.randomize');
 const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
-
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-/* Declaring the array of image filenames */
-const images = ['pic1.jpg', `pic2.jpg`, `pic3.jpg`, `pic4.jpg`, `pic5.jpg`, `pic6.jpg`, `pic7.jpg`, `pic8.jpg`, `pic9.jpg`, `pic10.jpg`, `pic11.jpg`, `pic12.jpg`, `pic13.jpg`, `pic14.jpg`, `pic15.jpg`];
+function randomValueFromArray(array){
+  const random = Math.floor(Math.random()*array.length);
+  return array[random];
+}
+
+var pics = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
+const insertX = [`pic1.jpg`, `pic6.jpg`, `pic11.jpg`];
+const insertY = [`pic2.jpg`, `pic7.jpg`, `pic12.jpg`];
+const insertZ = [`pic3.jpg`, `pic8.jpg`, `pic13.jpg`];
+const insertW = [`pic4.jpg`, `pic8.jpg`, `pic14.jpg`];
+const insertV = [`pic5.jpg`, `pic10.jpg`, `pic15.jpg`];
+
+randomize.addEventListener('click', result);
+
+function result() {
+  const xItem = randomValueFromArray(insertX);
+  const yItem = randomValueFromArray(insertY);
+  const zItem = randomValueFromArray(insertZ);
+  const wItem = randomValueFromArray(insertW);
+  const vItem = randomValueFromArray(insertV);
+
+  pics[0] = xItem;
+  pics[1] = yItem;
+  pics[2] = zItem;
+  pics[3] = wItem;
+  pics[4] = vItem;
+
+  /* Looping through images */
+  for (const image of pics) {
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', `images/${image}`);
+    newImage.setAttribute('alt', alts[image]);
+    thumbBar.appendChild(newImage);
+    newImage.addEventListener('click', e => {
+    displayedImage.src = e.target.src;
+    displayedImage.alt = e.target.alt;
+    });
+  }
+}
 
 /* Declaring the alternative text for each image file */
 const alts = {
@@ -25,29 +62,3 @@ const alts = {
     'pic14.jpg' : 'Pink world with large planets in the sky, tilted',
     'pic15.jpg' : 'A slightly colorful sky above green grass',
   }
-
-/* Looping through images */
-for (const image of images) {
-    const newImage = document.createElement('img');
-    newImage.setAttribute('src', `images/${image}`);
-    newImage.setAttribute('alt', alts[image]);
-    thumbBar.appendChild(newImage);
-    newImage.addEventListener('click', e => {
-    displayedImage.src = e.target.src;
-    displayedImage.alt = e.target.alt;
-    });
-}
-
-/* Wiring up the Darken/Lighten button */
-btn.addEventListener('click', () => {
-  const btnClass = btn.getAttribute('class');
-  if (btnClass === 'dark') {
-    btn.setAttribute('class','light');
-    btn.textContent = 'Lighten';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
-  } else {
-    btn.setAttribute('class','dark');
-    btn.textContent = 'Darken';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0)';
-  }
-});
