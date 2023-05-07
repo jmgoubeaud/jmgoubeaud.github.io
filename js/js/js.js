@@ -13,7 +13,7 @@ var pics = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg', 'pic4.jpg', 'pic5.jpg'];
 const insertX = [`pic1.jpg`, `pic6.jpg`, `pic11.jpg`];
 const insertY = [`pic2.jpg`, `pic7.jpg`, `pic12.jpg`];
 const insertZ = [`pic3.jpg`, `pic8.jpg`, `pic13.jpg`];
-const insertW = [`pic4.jpg`, `pic8.jpg`, `pic14.jpg`];
+const insertW = [`pic4.jpg`, `pic9.jpg`, `pic14.jpg`];
 const insertV = [`pic5.jpg`, `pic10.jpg`, `pic15.jpg`];
 
 randomize.addEventListener('click', result);
