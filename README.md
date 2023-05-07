@@ -3,7 +3,7 @@
 Projects
     [HTML](https://jmgoubeaud.github.io/html-midterm/page5.html)
     [CSS](https://jmgoubeaud.github.io/index.html)
-    JS
+    [JS](http://jmgoubeaud.github.io/js/js/js.html)
 
 In-Class Assignments
     [ICA1](https://jmgoubeaud.github.io/ica/ICA1.pdf)
